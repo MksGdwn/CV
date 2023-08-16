@@ -1,10 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
 </head>
 <body>
+  <header class="header">
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Experience</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Education</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Languages</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content">
+    <section class="promo">
+      <div class="promo__content">
+        <h1 class="promo__title">Maksim Pogudin</h1>
+        <p class="promo__job">QA Engineer</p>
+        <ul class="promo__contacts">
+          <li class="promo__item">
+            <a href="tel:79194877501" class="promo__link">+7 (919) 487-75-01</a>
+          </li>
+          <li class="promo__item">
+            <a href="mailto:mksgdwn@gmail.com" class="promo__link">mksgdwn@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="promo__img-wrapper">
+        <img class="promo__img" src="" alt="Maksim Pogudin">
+      </div>
+    </section>
+    <section class="about">
+      <h2 class="about__title title">About me</h2>
+      <p class="about__text">I am a Front-end developer based in Noord-Holland, the Nederlands.
+        I have knowledge of Wepback, Typescript/Javascript, React, CSS (SASS), NestJS, GraphQL, Docker, MongoDB, Prisma.
+        In addition to my technical skills, I bring along professional work experience as an IT Project Manager where 
+        I learned about the software delivery lifecycle and agile development.
+        I am looking forward to working in teams as well as individually. I am not only willing to deepen my knowledge but 
+        I also want to apply them to the real products.
+      </p>
+    </section>
+    <section class="skills">
+      <h2 class="skills__title title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__item">JavaScript</li>
+        <li class="skills__item">Qase</li>
+        <li class="skills__item">Jira</li>
+        <li class="skills__item">HTML, CSS</li>
+        <li class="skills__item">Postman</li>
+        <li class="skills__item">Confluence</li>
+        <li class="skills__item">Sass</li>
+        <li class="skills__item">SQL</li>
+        <li class="skills__item">Figma</li>
+        <li class="skills__item">BEM</li>
+        <li class="skills__item">Git</li>
+        <li class="skills__item">Photoshop</li>
+      </ul>
+    </section>
+    <section class="projects">
+      <h2 class="projects__title title">Recent projects</h2>
+      <div class="projects__slider slider">
+        <div class="slider__wrapper">
+          <div class="slider__list">
+            <div class="slider__item">
+              <h3 class="slider__item-title">Brooklyn Public Library</h3>
+              <p class="slider__item-desc">Landing page for book selection and sales</p>
+              <a href="#" class="slider__item-btn">See project</a>
+            </div>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__btn slider__btn--left">Left</button>
+            <button class="slider__btn slider__btn--right">Right</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience">
+      <h2 class="experience__title title">Working Experience</h2>
+      <ul class="experience__list">
+        <li class="experience__item work">
+          <div class="work__wrapper">
+            <div class="work__block">
+              <p class="work__date">2021 - Now</p>
+              <p class="work__company">Prof-It</p>
+            </div>
+            <div class="work__block">
+              <p class="work__position">QA Engineer</p>
+              <ul class="work__duties">
+                <li class="work__duties-item">Functional testing of software products and their parts</li>
+                <li class="work__duties-item">API testing (Postman)</li>
+                <li class="work__duties-item">Testing of requirements and related product documentation</li>
+                <li class="work__duties-item">Acceptance testing during release of new versions of software products</li>
+                <li class="work__duties-item">Testing of "boxed" and customized solutions</li>
+                <li class="work__duties-item">Finding solutions to improve testing approaches</li>
+                <li class="work__duties-item">Product training</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="education">
+      <h2 class="education__title title">Education</h2>
+      <ul class="education__list">
+        <li class="education__item">
+          <p class="education__data">March, 2023 - now</p>
+          <p class="education__status">In Progress</p>
+          <p class="education__name">JS / Front-end</p>
+          <a href="#" class="education__link">Rolling Scopes School</a>
+        </li>
+        <li class="education__item">
+          <p class="education__data">December, 2022 - March, 2023</p>
+          <p class="education__status">Certificate</p>
+          <p class="education__name">JS / Front-end. Stage 0</p>
+          <a href="#" class="education__link">Rolling Scopes School</a>
+        </li>
+        <li class="education__item">
+          <p class="education__data">2009</p>
+          <p class="education__status"></p>
+          <p class="education__name">Perm Chemical Technology College</p>
+          <a href="#" class="education__link"></a>
+        </li>
+      </ul>
+    </section>
+    <section class="languages">
+      <h2 class="languages__title title">Languages</h2>
+      <ul class="languages__list">
+        <li class="languages__item">
+          <p class="languages__name">English</p>
+          <p class="languages__level">Elementary</p>
+        </li>
+        <li class="languages__item">
+          <p class="languages__name">Russian</p>
+          <p class="languages__level">Native</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">© 2023 by Maksim Pogudin</p>
+    <ul class="footer__social">
+      <li class="footer__item">
+        <a href="#" class="footer__link">Github</a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">Telegram</a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>

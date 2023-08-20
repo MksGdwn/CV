@@ -208,7 +208,7 @@ template {
   src: local(Inter), url("./../assets/fonts/Inter-ExtraBold.ttf");
   font-weight: 800;
 }
-.promo__contacts, .nav__list {
+.skills__list, .promo__contacts, .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -219,7 +219,7 @@ template {
   padding: 0;
 }
 
-.about__container, .promo__container, .nav__list, .header__container {
+.skills__container, .about__container, .promo__container, .nav__list, .header__container {
   display: flex;
   justify-content: space-between;
 }
@@ -369,6 +369,37 @@ body {
 }
 .about__title {
   min-width: 170px;
+}
+.skills__container {
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.skills__title {
+  min-width: 170px;
+}
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills__item {
+  position: relative;
+  flex-basis: 33%;
+  margin-bottom: 20px;
+  padding-left: 45px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.skills__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #92392B;
+  border-radius: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

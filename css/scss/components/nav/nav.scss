@@ -1,5 +1,4 @@
 .nav {
-
   &__list {
     @extend %no-list;
     @extend %row;
@@ -28,5 +27,4 @@
       color: $additional-color;
     }
   }
-
 }

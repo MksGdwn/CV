@@ -208,18 +208,18 @@ template {
   src: local(Inter), url("./../assets/fonts/Inter-ExtraBold.ttf");
   font-weight: 800;
 }
-.skills__list, .promo__contacts, .nav__list {
+.work__duties, .experience__list, .skills__list, .promo__contacts, .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.about__text, .title, .promo__job, .promo__title {
+.work__position, .work__date, .work__company, .about__text, .title, .promo__job, .promo__title {
   margin: 0;
   padding: 0;
 }
 
-.skills__container, .about__container, .promo__container, .nav__list, .header__container {
+.work__container, .skills__container, .about__container, .promo__container, .nav__list, .header__container {
   display: flex;
   justify-content: space-between;
 }
@@ -444,6 +444,64 @@ body {
 }
 .slider__btn--right {
   padding-right: 5%;
+}
+
+.experience__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.experience__title {
+  margin-bottom: 50px;
+}
+.work__container {
+  gap: 50px;
+}
+.work__date, .work__company {
+  min-width: 170px;
+  color: #505050;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.work__date {
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+}
+.work__date::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 40px;
+  background-color: #92392B;
+}
+.work__position {
+  margin-bottom: 30px;
+  color: #505050;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.work__duties-item {
+  position: relative;
+  padding-left: 45px;
+  box-sizing: border-box;
+}
+.work__duties-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #92392B;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+.work {
+  
+  &__container {
+    @extend %row;
+
+    gap: 50px;
+  }
+
+  &__date,
+  &__company  {
+    @extend %no-margin;
+
+    min-width: 170px;
+
+    color: $base-color--light;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+
+  &__date {
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 10px;
+      width: 40px;
+
+      background-color: $additional-color;
+    }
+  }
+
+  &__position {
+    @extend %no-margin;
+
+    margin-bottom: 30px;
+
+    color: $base-color--light;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    text-transform: capitalize;
+  }
+
+  &__duties {
+    @extend %no-list;
+  }
+
+  &__duties-item {
+    position: relative;
+    padding-left: 45px;
+
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      height: 15px;
+      width: 15px;
+
+      background-color: $additional-color;
+      border-radius: 50%;
+    }
+  }
+}

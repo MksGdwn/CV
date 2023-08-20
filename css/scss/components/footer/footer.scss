@@ -1,0 +1,41 @@
+.footer {
+  padding: 35px 0;
+
+  color: $white;
+
+  background-color: $base-color;
+  
+  &__container {
+    @extend %row;
+
+    align-items: center
+  }
+
+  &__copyright {
+    @extend %no-margin;
+  }
+
+  &__social {
+    @extend %no-list;
+    @extend %row;
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__link-svg {
+    fill: $white;
+  }
+
+}

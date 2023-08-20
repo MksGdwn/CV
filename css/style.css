@@ -208,18 +208,18 @@ template {
   src: local(Inter), url("./../assets/fonts/Inter-ExtraBold.ttf");
   font-weight: 800;
 }
-.languages__list, .education__list, .work__duties, .experience__list, .skills__list, .promo__contacts, .nav__list {
+.footer__social, .languages__list, .education__list, .work__duties, .experience__list, .skills__list, .promo__contacts, .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.languages__name, .languages__level, .education__data, .education__status, .education__name, .work__position, .work__date, .work__company, .about__text, .title, .promo__job, .promo__title {
+.footer__copyright, .languages__name, .languages__level, .education__data, .education__status, .education__name, .work__position, .work__date, .work__company, .about__text, .title, .promo__job, .promo__title {
   margin: 0;
   padding: 0;
 }
 
-.work__container, .skills__container, .about__container, .promo__container, .nav__list, .header__container {
+.footer__social, .footer__container, .work__container, .skills__container, .about__container, .promo__container, .nav__list, .header__container {
   display: flex;
   justify-content: space-between;
 }
@@ -581,6 +581,29 @@ body {
   line-height: 28px;
   text-transform: capitalize;
   color: #505050;
+}
+
+.footer {
+  padding: 35px 0;
+  color: #fff;
+  background-color: #707070;
+}
+.footer__container {
+  align-items: center;
+}
+.footer__item {
+  margin-right: 25px;
+}
+.footer__item:last-child {
+  margin-right: 0;
+}
+.footer__link {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.footer__link-svg {
+  fill: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -420,10 +420,10 @@ body {
   transform: translateY(-50%);
 }
 .promo__link--phone::before {
-  background: url("./../../assets/svg/phone.svg");
+  background: url("./../assets/svg/phone.svg");
 }
 .promo__link--email::before {
-  background: url("./../../assets/svg/email.svg");
+  background: url("./../assets/svg/email.svg");
 }
 .promo__link:hover {
   color: #92392B;

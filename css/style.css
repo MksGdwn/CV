@@ -402,4 +402,48 @@ body {
   transform: translateY(-50%);
 }
 
+.projects__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.projects__title {
+  margin-bottom: 50px;
+}
+
+.slider__wrapper {
+  position: relative;
+  padding: 0 140px;
+}
+.slider__item {
+  height: 320px;
+  width: 100%;
+  background: url("./../assets/img/library.jpg");
+  background-size: cover;
+  border-radius: 20px;
+}
+.slider__item-content {
+  display: none;
+}
+.slider__controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.slider__btn {
+  background: transparent;
+  border: none;
+  fill: #92392B;
+  cursor: pointer;
+}
+.slider__btn--left {
+  padding-left: 5%;
+}
+.slider__btn--right {
+  padding-right: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */

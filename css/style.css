@@ -208,13 +208,13 @@ template {
   src: local(Inter), url("./../assets/fonts/Inter-ExtraBold.ttf");
   font-weight: 800;
 }
-.education__list, .work__duties, .experience__list, .skills__list, .promo__contacts, .nav__list {
+.languages__list, .education__list, .work__duties, .experience__list, .skills__list, .promo__contacts, .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.education__data, .education__status, .education__name, .work__position, .work__date, .work__company, .about__text, .title, .promo__job, .promo__title {
+.languages__name, .languages__level, .education__data, .education__status, .education__name, .work__position, .work__date, .work__company, .about__text, .title, .promo__job, .promo__title {
   margin: 0;
   padding: 0;
 }
@@ -548,6 +548,39 @@ body {
 }
 .education__link:hover {
   color: #92392B;
+}
+
+.languages__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.languages__title {
+  margin-bottom: 50px;
+}
+.languages__list {
+  display: flex;
+  gap: 100px;
+}
+.languages__item {
+  position: relative;
+  padding-top: 40px;
+}
+.languages__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 40px;
+  background-color: #92392B;
+}
+.languages__name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #505050;
 }
 
 /*# sourceMappingURL=style.css.map */

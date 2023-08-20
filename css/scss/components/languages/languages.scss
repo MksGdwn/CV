@@ -1,0 +1,50 @@
+.languages {
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    @extend %no-list;
+
+    display: flex;
+    gap: 100px;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 10px;
+      width: 40px;
+
+      background-color: $additional-color;
+    }
+  }
+
+  &__name,
+  &__level {
+    @extend %no-margin;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: $base-color--light;
+  }
+
+}

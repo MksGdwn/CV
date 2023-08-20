@@ -52,11 +52,11 @@
     }
 
     &--phone::before {
-      background: url("./../../assets/svg/phone.svg");
+      background: url("./../assets/svg/phone.svg");
     }
 
     &--email::before {
-      background: url("./../../assets/svg/email.svg");
+      background: url("./../assets/svg/email.svg");
     }
 
     &:hover {

@@ -1,7 +1,9 @@
 .header {
+  padding: 50px 0;
+  
+  &__container {
+    @extend %row;
 
-  &__wrapper {
-    display: flex;
     justify-content: flex-end;
   }
 

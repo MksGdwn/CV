@@ -229,7 +229,7 @@ template {
   font-weight: 800;
 }
 
-.footer__link-svg, .education__link, .promo__link, .nav__link {
+.footer__link-svg, .education__link, .slider__btn, .promo__link, .nav__link {
   transition: all 0.2s ease-in;
 }
 
@@ -668,6 +668,9 @@ body {
   fill: #92392B;
   cursor: pointer;
 }
+.slider__btn:active {
+  transform: scale(0.95);
+}
 .slider__btn--left {
   margin-left: 5%;
 }
@@ -980,34 +983,7 @@ body {
 }
 .footer__link-svg {
   fill: #fff;
-  transform: scale(0.85);
-}
-.footer__link-svg:hover {
-  transform: scale(1);
-}
-
-.footer {
-  padding: 35px 0;
-  color: #fff;
-  background-color: #707070;
-}
-.footer__container {
-  align-items: center;
-}
-.footer__item {
-  margin-right: 15px;
-}
-.footer__item:last-child {
-  margin-right: 0;
-}
-.footer__link {
-  display: block;
-  height: 50px;
-  width: 50px;
-}
-.footer__link-svg {
-  fill: #fff;
-  transform: scale(0.85);
+  transform: scale(0.95);
 }
 .footer__link-svg:hover {
   transform: scale(1);

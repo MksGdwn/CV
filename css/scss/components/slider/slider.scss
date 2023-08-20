@@ -30,11 +30,17 @@
   }
 
   &__btn {
+    @extend %animation-all;
+
     background: transparent;
     border: none;
     fill: $additional-color;
 
     cursor: pointer;
+
+    &:active {
+      transform: scale(.95);
+    }
 
     &--left {
       margin-left: 5%;

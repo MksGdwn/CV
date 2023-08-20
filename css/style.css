@@ -208,5 +208,55 @@ template {
   src: local(Inter), url("./../assets/fonts/Inter-ExtraBold.ttf");
   font-weight: 800;
 }
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  transition: all 0.2s ease-in;
+}
+
+body {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 32px;
+  color: #838383;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__item {
+  margin-right: 30px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__link {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: #92392B;
+}
 
 /*# sourceMappingURL=style.css.map */

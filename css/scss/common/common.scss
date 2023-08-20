@@ -1,0 +1,14 @@
+body {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 32px;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 60px;
+  
+  box-sizing: border-box;
+}

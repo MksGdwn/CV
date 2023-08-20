@@ -214,12 +214,12 @@ template {
   list-style: none;
 }
 
-.promo__job, .promo__title {
+.about__text, .title, .promo__job, .promo__title {
   margin: 0;
   padding: 0;
 }
 
-.promo__container, .nav__list, .header__container {
+.about__container, .promo__container, .nav__list, .header__container {
   display: flex;
   justify-content: space-between;
 }
@@ -241,10 +241,29 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 60px;
   box-sizing: border-box;
+}
+.container--separator::after {
+  content: "";
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+  height: 5px;
+  width: calc(100% - 120px);
+  background-color: #707070;
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #707070;
 }
 
 .header {
@@ -273,6 +292,7 @@ body {
 
 .promo__container {
   align-items: center;
+  padding-bottom: 80px;
 }
 .promo__title {
   font-size: 72px;
@@ -340,6 +360,15 @@ body {
   height: 380px;
   width: 380px;
   border-radius: 50%;
+}
+
+.about__container {
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about__title {
+  min-width: 170px;
 }
 
 /*# sourceMappingURL=style.css.map */

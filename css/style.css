@@ -233,6 +233,10 @@ template {
   transition: all 0.2s ease-in;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Inter;
   font-size: 20px;

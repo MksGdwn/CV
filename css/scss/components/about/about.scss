@@ -1,0 +1,18 @@
+.about {
+
+  &__container {
+    @extend %row;
+
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    min-width: 170px;
+  }
+
+  &__text {
+    @extend %no-margin;
+  }
+}

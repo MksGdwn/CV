@@ -1,0 +1,65 @@
+.education {
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    @extend %no-list;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 20% 15% 1fr 1fr;
+    padding: 35px 0;
+    gap: 40px;
+
+    border-bottom: 1px solid $base-color;
+    
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+
+      border-bottom: none;
+    }
+  }
+
+  &__data,
+  &__status,
+  &__name {
+    @extend %no-margin;
+  }
+
+  &__data,
+  &__name {
+    color: $base-color--light;
+    font-family: Poppins;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__link {
+    display: block;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: $base-color;
+
+    text-decoration: none;
+
+    @extend %animation-all;
+
+    &:hover {
+      color: $additional-color;
+    }
+  }
+
+}

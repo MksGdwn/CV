@@ -1,0 +1,28 @@
+@include size-xl {
+  .nav {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    z-index: 100;
+    min-width: 320px;
+
+    background-color: $white;
+
+    &__list {
+      display: block;
+    }
+  
+    &__item {
+      margin-right: 0;
+    }
+  
+    &__link {
+      width: 100%;
+      padding: 20px 0;
+  
+      font-size: 20px;
+      text-align: center;
+    }
+  
+  }
+}

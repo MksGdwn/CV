@@ -1,0 +1,11 @@
+@mixin size-xl() {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin size-md() {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}

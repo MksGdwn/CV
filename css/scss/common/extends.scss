@@ -1,0 +1,27 @@
+%no-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+%no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+%row {
+  display: flex;
+  justify-content: space-between;
+}
+
+%title-font {
+  @extend %no-margin;
+  
+  font-family: Poppins, Inter, sans-serif;
+  font-weight: 800;
+}
+
+%animation-all {
+  transition: all .2s ease-in;
+}

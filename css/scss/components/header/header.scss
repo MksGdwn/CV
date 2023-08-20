@@ -1,0 +1,14 @@
+.header {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  
+  &__container {
+    @extend %row;
+
+    justify-content: flex-end;
+  }
+
+  &__burger {
+    display: block;
+  }
+}

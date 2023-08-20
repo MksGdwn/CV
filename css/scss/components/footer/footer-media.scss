@@ -1,0 +1,70 @@
+.footer {
+  padding: 35px 0;
+
+  color: $white;
+
+  background-color: $base-color;
+  
+  &__container {
+    @extend %row;
+
+    align-items: center
+  }
+
+  &__copyright {
+    @extend %no-margin;
+  }
+
+  &__social {
+    @extend %no-list;
+    @extend %row;
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__link-svg {
+    @extend %animation-all;
+
+    fill: $white;
+
+    transform: scale(.85);
+    
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+@include size-md {
+  .footer {
+    padding: 25px 0;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__copyright {
+      margin-bottom: 25px;
+    }
+    
+    &__link-svg {
+      transform: scale(1);
+      
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+}

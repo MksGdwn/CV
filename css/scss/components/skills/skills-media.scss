@@ -1,0 +1,39 @@
+@include size-xl {
+  .skills {
+    &__container {
+      display: flex;
+      flex-direction: column;
+  
+      gap: 0;
+      padding-top: 35px;
+      padding-bottom: 20px;
+    }
+  
+    &__title {
+      min-width: 100%;
+      padding-bottom: 35px;
+    }
+  }
+}
+
+@include size-md {
+  .skills {
+    &__container {
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+  
+    &__title {
+      padding-bottom: 25px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      padding-left: 15%;
+    }
+  }
+}

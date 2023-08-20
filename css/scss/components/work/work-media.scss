@@ -1,0 +1,45 @@
+@include size-xl {
+  .work {
+    &__container {
+      gap: 35px;
+    }
+  
+    &__date,
+    &__company  {
+      min-width: 70px;
+    }
+  
+    &__position {
+      margin-bottom: 52px;
+    }
+  }
+}
+
+@include size-md {
+  .work {
+    &__container {
+      gap: 25px;
+    }
+  
+    &__date,
+    &__company  {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    &__position {
+      margin-bottom: 50px;
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__duties-item {
+      padding-left: 12%;
+  
+      &::before {
+        top: 3px;
+      }
+    }
+  }
+}

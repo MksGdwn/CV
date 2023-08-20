@@ -1,0 +1,38 @@
+@include size-xl {
+  .education {
+    &__container {
+      padding-top: 35px;
+      padding-bottom: 40px;
+    }
+  
+    &__title {
+      margin-bottom: 35px;
+    }
+  
+    &__item {
+      display: block;
+      padding: 25px 0;
+      
+      &:first-child {
+        padding-top: 0;
+      }
+  
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@include size-md {
+  .education {
+    &__container {
+      padding-top: 25px;
+      padding-bottom: 30px;
+    }
+  
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}

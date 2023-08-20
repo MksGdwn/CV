@@ -1,0 +1,65 @@
+@include size-xl {
+  .header {
+    position: relative;
+
+    &__burger {
+      position: relative;
+      display: block;
+      height: 40px;
+      width: 40px;
+
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 100%;
+
+        background-color: $base-color;
+      }
+
+      &::before {
+        top: 10px;
+
+        box-shadow: 0 9px 0 $base-color;
+      }
+
+      &::after {
+        bottom: 10px;
+      }
+
+      &--active {
+        &::before {
+          top: 0;
+  
+          box-shadow: none;
+          transform: translate(0, 20px) rotate(45deg);
+        }
+
+        &::after {
+          top: 0;
+
+          transform: translate(0, 20px) rotate(-45deg);
+        }
+      }
+    }
+
+    &__nav {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+  }
+}
+
+@include size-md {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+}

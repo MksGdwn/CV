@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  min-width: $breakpoint-sm;
+  
   font-family: Inter;
   font-size: 20px;
   line-height: 32px;
@@ -11,7 +13,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 1024px;
+  max-width: $breakpoint-xxl;
   margin: 0 auto;
   padding: 0 60px;
   

@@ -387,7 +387,7 @@ body {
   position: relative;
   flex-basis: 33%;
   margin-bottom: 20px;
-  padding-left: 45px;
+  padding-left: 5%;
   text-transform: uppercase;
   box-sizing: border-box;
 }
@@ -491,7 +491,7 @@ body {
 }
 .work__duties-item {
   position: relative;
-  padding-left: 45px;
+  padding-left: 5%;
   box-sizing: border-box;
 }
 .work__duties-item::before {
@@ -513,7 +513,8 @@ body {
   margin-bottom: 50px;
 }
 .education__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% 15% 1fr 1fr;
   padding: 35px 0;
   gap: 40px;
   border-bottom: 1px solid #707070;
@@ -530,15 +531,6 @@ body {
   font-family: Poppins;
   font-weight: 700;
   text-transform: capitalize;
-}
-.education__data {
-  flex-basis: 20%;
-}
-.education__status {
-  flex-basis: 15%;
-}
-.education__name {
-  flex-basis: 28%;
 }
 .education__link {
   display: block;

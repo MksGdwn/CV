@@ -14,7 +14,8 @@
   }
 
   &__item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 15% 1fr 1fr;
     padding: 35px 0;
     gap: 40px;
 
@@ -46,15 +47,12 @@
   }
 
   &__data {
-    flex-basis: 20%;
   }
 
   &__status {
-    flex-basis: 15%;
   }
 
   &__name {
-    flex-basis: 28%;
   }
 
   &__link {
